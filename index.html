@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ accordion</title>
+
+    <!--Link with Css Style page -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link with js file -->
+
+    <script src="app.js" defer></script>
+
+  </head>
+  <body>
+    <div class="faq-container">
+      <section class="faq-header">
+        <img src="./assets/images/icon-star.svg" alt="Logo or icon" />
+        <h1 class="faq-title">FAQs</h1>
+      </section>
+    
+      <section class="faq-add-box"></section>
+    
+      <article class="faq-description">
+        <p>
+          This section contains Frequently Asked Questions. It helps users
+          quickly find answers to common doubts. Organized in a clean and
+          easy-to-read format. Improves user experience by reducing confusion.
+        </p>
+      </article>
+    
+      <section class="faq-list">
+        <div class="faq-item" value="1">
+          <p>What technologies do you specialize in?</p>
+          <img  class="add" src="./assets/images/icon-plus.svg" alt="Expand icon" onclick="hitme() " value="1" />
+        </div>
+        <div class="faq-item" value="2">
+          <p>How long does it take to complete a project?</p>
+          <img class="add" src="./assets/images/icon-plus.svg" alt="Expand icon" onclick="hitme() "value="2" />
+        </div>
+        <div class="faq-item" value="3">
+          <p>Can I see samples of your previous work?</p>
+          <img class="add" src="./assets/images/icon-plus.svg" alt="Expand icon"  onclick="hitme() "value="3"/>
+        </div>
+        <div class="faq-item" value="4">
+          <p>Do you offer ongoing support after project completion?</p>
+          <img  class="add" src="./assets/images/icon-plus.svg" alt="Expand icon" onclick="hitme() "value="4" />
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>

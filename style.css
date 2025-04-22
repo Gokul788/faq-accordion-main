@@ -1,0 +1,119 @@
+/* Import font in google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+
+:root{
+    --bgcolor:hsl(0, 100%, 100%);
+    --color1: hsl(275, 100%, 97%);
+    --color2: hsl(292, 16%, 49%);
+    --color3:hsl(292, 42%, 14%);
+    --primaryfont: "Work Sans", sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    position:top;
+    background-repeat: no-repeat;
+    font-family: var(--primaryfont);
+    background-color: var(--color1);
+    background-size: contain;
+}
+
+
+/* General stlyes */ 
+
+.faq-container {
+    background-color: var(--bgcolor);
+    padding: 1.5rem ;
+    border-radius: .5rem;
+    max-width: 320px;
+}
+.faq-header{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-header > img {
+    width: 25px;
+}
+.faq-title{
+    font-size: 2rem;
+    color: var(--color3);
+}
+.faq-description{
+    color: var(--color2);
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+.faq-list{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+}
+.faq-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.faq-item > p{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--color3);
+
+}
+.faq-add-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* media quary */
+@media (min-width:768px) {
+    
+
+body{
+    background: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: var(--color1);
+
+}
+.faq-container{
+    max-width: 500px;
+    padding: 2rem;
+   
+}
+.faq-item > p{
+    font-size: 1rem;
+}
+.faq-title{
+    font-size: 3rem;
+}
+.faq-description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+}
