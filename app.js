@@ -10,7 +10,7 @@ document.querySelectorAll('.add').forEach((icon) => {
     if (!isInAddBox) {
       // Move to Add Box
       addBox.appendChild(faqItem);
-      this.src = './assets/images/icon-minus.svg'; // Change to minus
+      this.src = 'assets/images/icon-minus.svg'; // Change to minus
     } else {
       // Move back to FAQ list
       faqList.appendChild(faqItem);
